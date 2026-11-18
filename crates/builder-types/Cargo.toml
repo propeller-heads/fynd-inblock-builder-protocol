@@ -1,0 +1,15 @@
+[package]
+name = "builder-types"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Shared channel types for block-builder ↔ solver integration"
+
+[dependencies]
+alloy = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+
+[lints]
+workspace = true
