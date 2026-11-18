@@ -1,0 +1,26 @@
+[package]
+name = "builder-protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Wire protocol between a block builder and the fynd JIT route solver"
+
+[dependencies]
+# Re-exported wholesale: a builder depends on this crate and gets the payload types with
+# it, so `builder-types` stays free to keep its own dependency list minimal.
+builder-types = { workspace = true }
+alloy = { workspace = true }
+futures = { workspace = true }
+postcard = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+tracing = { workspace = true }
+
+[dev-dependencies]
+uuid = { workspace = true }
+
+[lints]
+workspace = true
