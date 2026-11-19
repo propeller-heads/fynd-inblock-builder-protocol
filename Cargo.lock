@@ -1124,7 +1124,7 @@ dependencies = [
 
 [[package]]
 name = "builder-protocol"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "alloy",
  "builder-types",
@@ -1140,7 +1140,7 @@ dependencies = [
 
 [[package]]
 name = "builder-types"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "alloy",
  "serde",
