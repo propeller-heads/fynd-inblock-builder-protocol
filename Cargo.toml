@@ -6,7 +6,7 @@ resolver = "2"
 edition = "2021"
 license = "MIT"
 publish = false
-version = "0.2.0"
+version = "0.2.1"
 
 [workspace.dependencies]
 alloy = { version = "1", features = ["serde", "providers", "transport-http", "rpc-types", "sol-types", "network", "consensus", "eips", "k256"] }
