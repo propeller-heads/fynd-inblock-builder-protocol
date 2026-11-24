@@ -1,0 +1,18 @@
+[package]
+name = "fynd-jit-router-interface"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "The FyndJITRouter interface a block builder works with: its ABI, the observation gate, the order key and the stored-route format"
+
+[dependencies]
+# `json` lets `sol!` read the ABI file in `abi/`.
+alloy = { workspace = true, features = ["json"] }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+
+[lints]
+workspace = true
